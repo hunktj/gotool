@@ -4,13 +4,13 @@ import (
 	"time"
 )
 
-//获取当前时间
+// GetNowTime 获取当前时间
 func GetNowTime() string {
 	nowTime := time.Now().Format("2006-01-02 15:04:05 ")
 	return nowTime
 }
 
-//获取当前时间戳
+// GetNowTimeUinx 获取当前时间戳
 func GetNowTimeUinx() int64 {
 	nowTimeUnix := time.Now().Unix()
 	return nowTimeUnix
@@ -57,7 +57,7 @@ func GetTime(date string) (int, int) {
 	return stime, etime
 }
 
-//返回一天的开始时间戳和最后时间戳如：2022-10-12 00:00:00 -- 2022-10-12 23:59:59
+// DayStimeAndEtime 返回一天的开始时间戳和最后时间戳如：2022-10-12 00:00:00 -- 2022-10-12 23:59:59
 func DayStimeAndEtime(times string) (int64, int64) {
 	loc, _ := time.LoadLocation("Local")
 	var T time.Time
