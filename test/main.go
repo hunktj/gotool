@@ -2,17 +2,21 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/vpertj/glog"
-	"github.com/vpertj/gotool"
-	_ "github.com/vpertj/gotool"
+	gotool "github.com/vpertj/gotool/Convert"
 )
 
 var log glog.Logger
 
 func main() {
 	//ils := gotools.ToString(23)
+	log = glog.NewConsoleLog("debug")
+	log.Debug("dddddddddddd")
 	num := int64(34)
-	sdd := gotool.ToInt(num)
+	sdd := gotool.ToString(num)
+	fmt.Println(sdd)
+
 	//r := gotools.Rounding(99449.543556, 3)
 	tmp := "2006-01-02 15:04:05"
 	//tm := gotool.UnixTimeToStr(1661843160, tmp)
