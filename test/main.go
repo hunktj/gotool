@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/vpertj/glog"
-	gotool "github.com/vpertj/gotool/Convert"
+	"github.com/vpertj/gotool"
 )
 
 var log glog.Logger
